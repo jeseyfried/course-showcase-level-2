@@ -1,0 +1,154 @@
+/*****************************************************
+GLOBAL STYLES
+*****************************************************/
+body {
+    font-family: 'IBM Plex Sans', Arial, sans-serif;
+    font-size: 18px;
+    background: #f6f8fa;
+    color: #24292f;
+    margin: 0;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 50rem;
+    margin: 0 auto;
+    clear: both;
+}
+
+/*****************************************************
+TYPOGRAPHY
+*****************************************************/
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'IBM Plex Sans', Arial, sans-serif;
+    font-weight: 700;
+    color: #24292f;
+    text-align: left;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.home-title h1 {
+    font-family: 'IBM Plex Sans', Arial, sans-serif;
+    color: #0366d6;
+    font-size: 3rem;
+    margin-top: -1.2em;
+    margin-bottom: .2em;
+}
+
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.5rem; }
+h4 { font-size: 1.2rem; }
+h5 { text-transform: uppercase; font-size: 1rem; }
+
+p {
+    font-family: 'IBM Plex Sans', Arial, sans-serif;
+    line-height: 1.6em;
+    font-size: 1.1rem;
+    color: #24292f;
+    margin: 1em 0;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #999;
+    clear: both;
+}
+
+blockquote {
+    margin: 1em 2em;
+    font-size: 1rem;
+    color: #555;
+    border-left: 4px solid #e1e4e8;
+    padding-left: 1em;
+    background: #f6f8fa;
+}
+
+/*****************************************************
+LINKS
+*****************************************************/
+a {
+    color: #0366d6;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+a:hover {
+    text-decoration: underline;
+    color: #0056b3;
+}
+
+/*****************************************************
+SIDEBAR
+*****************************************************/
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 260px;
+    height: 100vh;
+    background: #fff;
+    color: #24292f;
+    border-right: 1px solid #e1e4e8;
+    display: flex;
+    flex-direction: column;
+    z-index: 1000;
+}
+
+.sidebar-brand {
+    font-family: 'IBM Plex Sans', Arial, sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #800000;
+    padding: 1rem 1.5rem;
+    display: block;
+    text-decoration: none;
+    border-bottom: 1px solid #e1e4e8;
+}
+
+.sidebar-section {
+    margin-top: 1rem;
+}
+
+.sidebar-section > span {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin: 1.5rem 1rem 0.5rem 1.5rem;
+    display: block;
+    color: #24292f;
+}
+
+.sidebar-subnav {
+    font-size: 0.95em;
+    padding-left: 2em;
+}
+
+.sidebar-subnav a {
+    color: #24292f;
+    display: block;
+    padding: 0.3rem 0;
+    font-weight: 400;
+    transition: background 0.2s, color 0.2s;
+}
+
+.sidebar-subnav a:hover {
+    color: #0366d6;
+    background: #eaf5ff;
+}
+
+/*****************************************************
+MAIN CONTENT AREA
+*****************************************************/
+.main-content {
+    margin-left: 260px;
+    background: #fff;
+    padding: 2rem 3rem;
+    min-height:
+
