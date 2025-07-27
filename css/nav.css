@@ -1,0 +1,149 @@
+/* NAVIGATION BAR - CLEAN MODERN STYLE, NO BULLETS */
+
+/* Remove bullets and default list styles */
+.navbar,
+.navbar ul,
+.navbar li,
+.nav,
+.nav ul,
+.nav li,
+.sidebar,
+.sidebar ul,
+.sidebar li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Main navbar container */
+.navbar, .nav, .sidebar {
+    background: #fff;
+    color: #24292f;
+    border-right: 1px solid #e1e4e8;
+    width: 260px;
+    min-height: 100vh;
+    font-family: 'IBM Plex Sans', Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+/* Brand/logo at top */
+.navbar-brand, .sidebar-brand {
+    font-size: 2rem !important;
+    font-weight: 900 !important;
+    color: #800000;
+    padding: 1rem 1.5rem;
+    display: block;
+    text-decoration: none;
+    border-bottom: none;
+    background: #fff;
+}
+
+/* Navigation sections and headings */
+.navbar-section, .sidebar-section {
+    margin-top: 1rem;
+}
+
+.navbar-section > span,
+.sidebar-section > span {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin: 1.5rem 1rem 0.5rem 1.5rem;
+    display: block;
+    color: #24292f;
+    border-bottom: 1px solid #444;
+    padding-bottom: 0.5em;
+}
+
+/* Navigation links */
+.navbar ul,
+.nav ul,
+.sidebar ul {
+    padding-left: 0;
+}
+
+.navbar li,
+.nav li,
+.sidebar li {
+    margin-bottom: 0;
+}
+
+.navbar a,
+.nav a,
+.sidebar a {
+    display: block;
+    color: #800000;
+    padding: 0.6em 1.5em;
+    text-decoration: none;
+    font-size: 1.05em;
+    font-weight: 400;
+    border-radius: 4px;
+    transition: background 0.2s, color 0.2s;
+}
+
+.navbar a:hover,
+.nav a:hover,
+.sidebar a:hover {
+    color: #0366d6;
+    background: #eaf5ff;
+    text-decoration: none;
+}
+
+/* Active link style (if you use .active or aria-current) */
+.navbar a.active,
+.nav a.active,
+.sidebar a.active,
+.navbar a[aria-current="page"],
+.nav a[aria-current="page"],
+.sidebar a[aria-current="page"] {
+    color: #fff;
+    background: #0366d6;
+    font-weight: 600;
+}
+
+/* Responsive: stack nav vertically on mobile */
+@media (max-width: 800px) {
+    .navbar, .nav, .sidebar {
+        position: static;
+        width: 100%;
+        min-height: auto;
+        border-right: none;
+        border-bottom: none;
+    }
+    .navbar ul,
+    .nav ul,
+    .sidebar ul {
+        display: flex;
+        flex-direction: row;
+        padding: 0;
+        margin: 0;
+        justify-content: flex-start;
+    }
+    .navbar li,
+    .nav li,
+    .sidebar li {
+        flex: 1 1 auto;
+        margin: 0;
+    }
+    .navbar a,
+    .nav a,
+    .sidebar a {
+        padding: 0.8em;
+        text-align: center;
+    }
+    .navbar-brand, .sidebar-brand {
+        font-size: 1.3rem;
+        padding: 0.8rem;
+        border-bottom: none;
+    }
+}
+
+/* Optional: subtle divider between sections */
+.navbar-section:not(:last-child),
+.sidebar-section:not(:last-child) {
+    border-bottom: none;
+}
+
+/* Optional: scroll if sidebar is tall */
+.sidebar {
+    overflow-y: auto;
+}
