@@ -150,5 +150,8 @@ MAIN CONTENT AREA
     margin-left: 260px;
     background: #fff;
     padding: 2rem 3rem;
-    min-height:
+    min-height: 100vh;
+    max-width: 900px; 
+    margin-right: auto; 
+}
 
