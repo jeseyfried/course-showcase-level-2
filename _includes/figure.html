@@ -1,0 +1,27 @@
+{% capture img_url %}
+{% include image-path.html image-url=include.image-url %}
+{% endcapture %}
+
+{% assign img_url = img_url | strip %}
+
+{% if include.source-url %}
+
+{% capture full-caption %}
+  {{ include.caption | markdownify | remove: '<p>' | remove: '</p>'}} [<a href="{{ include.source-url }}">source</a>]
+{% endcapture %}
+
+{% else %}
+
+{% capture full-caption %}
+  {{ include.caption | markdownify | remove: '<p>' | remove: '</p>' }}
+{% endcapture %}
+
+{% endif %}
+
+<figure class="{{ include.class }}" style="width: {{ include.width | default: '40%' }}">
+  <a class="image" href="{{ img_url }}"><img src="{{ site.baseurl }}/essays/images/{{ include.image-url }}" alt="{{ include.caption }}" width="100%"></a>
+
+<figcaption class="{{ include.class }}">
+  {{ full-caption }}
+</figcaption>
+</figure>
