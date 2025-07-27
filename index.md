@@ -16,7 +16,7 @@ This is the website for the student essays submitted for Course 101.
 <div class="cards">
 
 {% for item in essays %}
-  {% if item.home-display != false %}
+  {% if item.home-display != false and item.path != 'index.md' %}
   <a href="{{ site.baseurl }}{{ item.url }}">
     <div class="row">
       <div class="col-md-8">
