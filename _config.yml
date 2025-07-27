@@ -1,0 +1,10 @@
+port: 4001
+
+essay-images: /essays/images
+
+defaults:
+  -
+    scope:
+      path: "essays"
+    values:
+      layout: "base"
