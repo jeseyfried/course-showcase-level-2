@@ -22,7 +22,7 @@ This is the website for the student essays submitted for Course 101.
           <p>{{ item.toc-blurb }}</p>
         </div>
         {% if item.toc-image %}
-        <img class="col-md-4 d-sm-none d-md-block" src="{{ site.baseurl }}/essays/images/{{ item.toc-image }}" alt="Essay image"/>
+        <img class="col-md-4 d-sm-none d-md-block" src="{{ site.baseurl }}/essays/images/{{ item.toc-image }}" alt="Essay image" style="width:50%;" />
         {% endif %}
       </div>
     </a>
