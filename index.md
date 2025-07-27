@@ -12,22 +12,25 @@ This is the website for the student essays submitted for Course 101.
 ## Table of Contents
 
 {% assign essays = site.pages | where_exp: "item", "item.path contains 'essays/'" | sort: "order" %}
-<div class="cards">
-{% for item in essays %}
-  {% if item.home-display != false %}
-    <a href="{{ site.baseurl }}{{ item.url }}">
-      <div class="row">
-        <div class="col-md-8">
-          <h2>{{ item.title }}</h2>
-          <p>{{ item.toc-blurb }}</p>
-        </div>
-        {% if item.toc-image %}
-          <img class="col-md-4 d-sm-none d-md-block" src="{{ site.baseurl }}/essays/images/{{ item.toc-image }}" alt="Essay image"/>
-        {% endif %}
-      </div>
-      <hr>
-  {% endif %}
-{% endfor %}
+<div class="container">
+  <div class="cards">
+    {% for item in essays %}
+      {% if item.home-display != false %}
+        <a href="{{ site.baseurl }}{{ item.url }}">
+          <div class="row">
+            <div class="col-md-8">
+              <h2>{{ item.title }}</h2>
+              <p>{{ item.toc-blurb }}</p>
+            </div>
+            {% if item.toc-image %}
+              <img class="col-md-4 d-sm-none d-md-block" src="{{ site.baseurl }}/essays/images/{{ item.toc-image }}" alt="Essay image"/>
+            {% endif %}
+          </div>
+        </a>
+        <hr>
+      {% endif %}
+    {% endfor %}
+  </div>
 </div>
 
 
