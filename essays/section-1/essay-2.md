@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: base
 title: YOUR TITLE
 subtitle: A DESCRIPTIVE SUBTITLE
 author: YOUR NAME
