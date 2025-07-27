@@ -5,9 +5,14 @@ date: 2024-12-02
 ---
 
 
-# Course Showcase
+# Course Showcase Level 2
 
 This is the website for the student essays submitted for Course 101.
+
+## Table of Contents
+
+
+
 
 {% include figure.html 
   class="right" 
